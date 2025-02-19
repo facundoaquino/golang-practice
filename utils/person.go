@@ -34,7 +34,7 @@ func GenerateRandomInts(n int) []int {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	ints := make([]int, n)
 	for i := range ints {
-		ints[i] = r.Intn(100)
+		ints[i] = r.Intn(1000)
 	}
 	return ints
 }
