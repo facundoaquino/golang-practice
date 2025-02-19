@@ -1,13 +1,12 @@
 {
     "version": "0.2.0",
     "configurations": [
-      
         {
-            "name": "Launch Binary Search",
+            "name": "Debug Current File",
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/algorithms_exercises/binarySearch/main.go",
+            "program": "${file}", 
             "env": {},
             "args": [],
             "showLog": true

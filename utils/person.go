@@ -28,3 +28,13 @@ func GenerateRandomPersons() []Person {
 	}
 	return persons
 }
+
+// GENERATE A SLICE OF n [] INT
+func GenerateRandomInts(n int) []int {
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	ints := make([]int, n)
+	for i := range ints {
+		ints[i] = r.Intn(100)
+	}
+	return ints
+}
