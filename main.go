@@ -2,9 +2,18 @@ package main
 
 import "fmt"
 
+func heapAlloc() *int {
+	x := 42
+	return &x // Posible escape al heap
+}
+
+func stackAlloc() int {
+	y := 24
+	return y // No escapa, se queda en el stack
+}
+
 func main() {
-
-	var floatN float64 = 10.58548
-
-	fmt.Printf("Float: %f\n", floatN)
+	a := heapAlloc()
+	b := stackAlloc()
+	fmt.Println(*a, b)
 }
