@@ -50,6 +50,7 @@ func (t *Triangule) Perimeter() float64 {
 
 func (t *Triangule) Color() string {
 	return "Color: " + t.ColorH
+
 }
 
 // EL RECTANGULO TIENE ESTOS METODOS IMPLEMENTADOS, ENTONCES ==> ES UNA SHAPE
