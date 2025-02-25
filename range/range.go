@@ -5,6 +5,9 @@ import (
 	"mi_proyecto/utils"
 )
 
+// It’s important to know that range is making a copy of the value, not returning a reference.
+// If you use the address of the value variable as a pointer to each element, you’ll
+// be making a mistake.
 func main() {
 
 	arrInt := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}

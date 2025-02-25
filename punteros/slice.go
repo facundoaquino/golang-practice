@@ -7,11 +7,17 @@ func main() {
 	var sliceN []int
 
 	sliceN = append(sliceN, 1, 2, 3, 4, 5)
-	changeSlice(sliceN)
-	takeAPorcion(sliceN)
+	tryToChangeSlice(&sliceN)
+	// changeSlice(sliceN)
+	// takeAPorcion(sliceN)
 
 	fmt.Printf("Slice: %v\n", sliceN)
 
+}
+func tryToChangeSlice(sliceN *[]int) {
+	slice2 := make([]int, 0)
+	slice2 = append(slice2, 1, 2, 3, 4, 5, 9, 34, 2)
+	*sliceN = slice2
 }
 
 // los slices pasan por referencia
