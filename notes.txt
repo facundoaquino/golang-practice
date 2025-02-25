@@ -1,0 +1,10 @@
+
+- When you’re writing code that will live in its own
+package, it’s good practice to name the package the same as the folder the code is in.
+All the Go tooling expects this convention, so it’s a good practice to follow.
+
+
+- It’s a convention in Go to give factory functions the name of New. This New function does something
+interesting: it creates a value of the unexported type and returns that value back
+to the caller.         
+
