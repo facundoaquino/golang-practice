@@ -8,3 +8,19 @@ All the Go tooling expects this convention, so it’s a good practice to follow.
 interesting: it creates a value of the unexported type and returns that value back
 to the caller.         
 
+
+*****CONCURRENCIA****
+
+-The Go runtime scheduler is a sophisticated piece of software that manages all
+the goroutines that are created and need processor time.
+
+-When two or more goroutines have unsynchronized access to a shared resource and
+attempt to read and write to that resource at the same time, you have what’s called a
+race condition. Race conditions are the reason concurrent programming is complicated
+and has a greater potential for bugs. Read and write operations against a
+shared resource
+
+go build -race
+
+-Unbuffered channels provide a guarantee between an exchange of data. Buffered
+channels do not.
