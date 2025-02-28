@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lion",
+    "country": "Kenya",
+    "age": 8
+  },
+  {
+    "name": "Elephant",
+    "country": "India",
+    "age": 25
+  },
+  {
+    "name": "Kangaroo",
+    "country": "Australia",
+    "age": 6
+  },
+  {
+    "name": "Panda",
+    "country": "China",
+    "age": 10
+  },
+  {
+    "name": "Penguin",
+    "country": "Antarctica",
+    "age": 15
+  },
+  {
+    "name": "Giraffe",
+    "country": "South Africa",
+    "age": 12
+  },
+  {
+    "name": "Tiger",
+    "country": "Russia",
+    "age": 7
+  },
+  {
+    "name": "Koala",
+    "country": "Australia",
+    "age": 9
+  },
+  {
+    "name": "Polar Bear",
+    "country": "Canada",
+    "age": 20
+  },
+  {
+    "name": "Zebra",
+    "country": "Namibia",
+    "age": 11
+  }
+]
