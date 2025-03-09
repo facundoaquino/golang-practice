@@ -24,3 +24,24 @@ go build -race
 
 -Unbuffered channels provide a guarantee between an exchange of data. Buffered
 channels do not.
+
+
+
+***********  FORMATTING CODE AND FIND ERROR WITH GO FMT AND GO VET*************
+
+
+The Go development tools include a command, go fmt , which automatically
+fixes the whitespace in your code to match the standard format. However, it
+can’t fix braces on the wrong line. Run it with the following:
+$ go fmt ./...
+hello.go
+Using ./... tells a Go tool to apply the command to all the files in the current
+directory and all subdirectories. You will see it again as you learn about more Go
+tools.
+If you open up hello.go, you’ll see that the line with fmt.Println is now
+properly indented with a single tab.
+
+Just as you should run go fmt to make sure your code is formatted properly, run go vet to scan for
+possible bugs in valid code. These commands are just the first step in ensuring that your code is of high
+quality. In addition to the advice in this book, all Go developers should read through Effective Go and the
+Code Review Comments page on Go’s wiki to understand what idiomatic Go code looks like.
